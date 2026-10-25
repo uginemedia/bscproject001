@@ -1,0 +1,465 @@
+.hospital-profile-page {
+  min-height: 100vh;
+  background: #f5f6f8;
+  padding: 35px 20px 60px;
+  color: #252b36;
+}
+
+.hospital-profile-wrapper {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.hospital-profile-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  color: #c7191f;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.hospital-profile-back span {
+  font-size: 23px;
+}
+
+.hospital-profile-back:hover {
+  transform: translateX(-3px);
+}
+
+.hospital-profile-hero {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 30px;
+  margin-bottom: 25px;
+  background: #fff;
+  border: 1px solid #e9eaee;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(20, 30, 50, 0.035);
+}
+
+.hospital-profile-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 82px;
+  height: 82px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  background: #c7191f;
+  color: #fff;
+  font-size: 44px;
+}
+
+.hospital-profile-heading {
+  flex: 1;
+  min-width: 0;
+}
+
+.hospital-profile-eyebrow {
+  color: #c7191f;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+}
+
+.hospital-profile-heading h1 {
+  margin: 7px 0;
+  overflow-wrap: anywhere;
+  color: #202633;
+  font-size: 27px;
+  font-weight: 750;
+}
+
+.hospital-profile-heading p {
+  margin: 0 0 12px;
+  color: #727986;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.hospital-verification {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 11px;
+  background: #f3f5f7;
+  border-radius: 20px;
+  color: #4b5563;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.verification-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.verification-dot.verified {
+  background: #16804a;
+}
+
+.verification-dot.unverified {
+  background: #d97706;
+}
+
+.hospital-edit-button,
+.hospital-save-button,
+.hospital-cancel-button,
+.hospital-primary-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 650;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.hospital-edit-button,
+.hospital-save-button,
+.hospital-primary-button {
+  border: 1px solid #c7191f;
+  background: #c7191f;
+  color: #fff;
+}
+
+.hospital-edit-button:hover,
+.hospital-save-button:hover,
+.hospital-primary-button:hover {
+  background: #a91319;
+}
+
+.hospital-edit-button span {
+  font-size: 18px;
+}
+
+.hospital-edit-button:disabled,
+.hospital-save-button:disabled,
+.hospital-cancel-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.hospital-profile-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+  margin-bottom: 25px;
+}
+
+.hospital-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+  padding: 22px 18px;
+  background: #fff;
+  border: 1px solid #e9eaee;
+  border-radius: 13px;
+}
+
+.hospital-stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.red-icon {
+  background: #fff0f0;
+  color: #c7191f;
+}
+
+.orange-icon {
+  background: #fff5e8;
+  color: #c77917;
+}
+
+.green-icon {
+  background: #eaf8ef;
+  color: #16804a;
+}
+
+.hospital-stat-card > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.hospital-stat-card span {
+  color: #737b88;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.hospital-stat-card strong {
+  color: #202633;
+  font-size: 27px;
+  line-height: 1;
+}
+
+.hospital-profile-card {
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #e9eaee;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(20, 30, 50, 0.025);
+}
+
+.hospital-card-heading {
+  margin-bottom: 26px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #edf0f3;
+}
+
+.hospital-card-heading h2 {
+  margin: 0 0 7px;
+  color: #202633;
+  font-size: 20px;
+}
+
+.hospital-card-heading p {
+  margin: 0;
+  color: #7a818d;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.hospital-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.hospital-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.hospital-form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.hospital-form-group label {
+  color: #343b47;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.hospital-form-group input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 46px;
+  padding: 12px 14px;
+  border: 1px solid #dfe3e8;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+  color: #252b36;
+  font-family: inherit;
+  font-size: 14px;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.hospital-form-group input:focus {
+  border-color: #c7191f;
+  box-shadow: 0 0 0 3px rgba(199, 25, 31, 0.08);
+}
+
+.hospital-form-group input:disabled {
+  background: #f8f9fb;
+  border-color: #edf0f3;
+  color: #555d69;
+  cursor: default;
+}
+
+.hospital-profile-readonly-note {
+  margin-top: 24px;
+  padding: 13px 15px;
+  border-radius: 8px;
+  background: #f8f9fb;
+  color: #747c88;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.hospital-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid #edf0f3;
+}
+
+.hospital-cancel-button {
+  border: 1px solid #dfe3e8;
+  background: #fff;
+  color: #454c58;
+}
+
+.hospital-cancel-button:hover {
+  background: #f5f6f8;
+}
+
+.hospital-account-note {
+  display: flex;
+  gap: 15px;
+  margin-top: 22px;
+  padding: 22px;
+  border: 1px solid #f2d6d7;
+  border-radius: 12px;
+  background: #fffafa;
+}
+
+.hospital-account-note-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #fce8e8;
+  color: #c7191f;
+  font-weight: 800;
+}
+
+.hospital-account-note h3 {
+  margin: 2px 0 7px;
+  color: #3c3031;
+  font-size: 14px;
+}
+
+.hospital-account-note p {
+  margin: 0;
+  color: #76696a;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.hospital-profile-empty {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 35px;
+  border-radius: 14px;
+  background: #fff;
+  text-align: center;
+}
+
+.hospital-profile-empty h2 {
+  margin-bottom: 22px;
+  font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+  .hospital-profile-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .hospital-profile-page {
+    padding: 24px 14px 40px;
+  }
+
+  .hospital-profile-hero {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 22px;
+  }
+
+  .hospital-profile-avatar {
+    width: 62px;
+    height: 62px;
+    border-radius: 14px;
+    font-size: 34px;
+  }
+
+  .hospital-profile-heading {
+    flex-basis: calc(100% - 85px);
+  }
+
+  .hospital-profile-heading h1 {
+    font-size: 21px;
+  }
+
+  .hospital-edit-button {
+    width: 100%;
+  }
+
+  .hospital-profile-stats {
+    gap: 10px;
+  }
+
+  .hospital-stat-card {
+    gap: 10px;
+    padding: 15px 12px;
+  }
+
+  .hospital-stat-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  .hospital-stat-card strong {
+    font-size: 23px;
+  }
+
+  .hospital-stat-card span {
+    font-size: 11px;
+  }
+
+  .hospital-profile-card {
+    padding: 21px 16px;
+  }
+
+  .hospital-form-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .hospital-form-group.full-width {
+    grid-column: auto;
+  }
+
+  .hospital-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .hospital-save-button,
+  .hospital-cancel-button {
+    width: 100%;
+  }
+
+  .hospital-account-note {
+    padding: 17px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hospital-profile-stats {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,704 @@
+/* ========================================
+   DASHBOARD
+======================================== */
+
+.dashboard-container {
+  min-height: 100vh;
+  padding: 45px 6%;
+  background: #f7f8fa;
+  color: #222;
+}
+
+/* ========================================
+   DASHBOARD HEADER
+======================================== */
+
+.dashboard-header {
+  max-width: 1250px;
+  margin: 0 auto 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.welcome-section {
+  flex: 1;
+}
+
+.welcome-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.welcome-dot {
+  width: 8px;
+  height: 8px;
+
+  background: var(--primary-color);
+
+  border-radius: 50%;
+}
+
+.dashboard-header h1 {
+  margin: 0 0 10px;
+
+  font-size: 38px;
+  line-height: 1.2;
+
+  font-weight: 750;
+
+  color: #242424;
+}
+
+.dashboard-header h1 span {
+  color: #c7191f;
+}
+
+.dashboard-header p {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ========================================
+   LOGOUT
+======================================== */
+
+.logout-button {
+  width: auto !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 13px 23px !important;
+
+  background: #ffffff !important;
+
+  color: #c7191f !important;
+
+  border: 1px solid #ead5d5 !important;
+
+  border-radius: 9px !important;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.logout-button span {
+  font-size: 18px;
+}
+
+.logout-button:hover {
+  background: #c7191f !important;
+  color: #ffffff !important;
+
+  border-color: #c7191f !important;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(199, 25, 31, 0.2);
+}
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.dashboard-content {
+  max-width: 1250px;
+  margin: auto;
+}
+
+/* ========================================
+   MAIN INFORMATION CARD
+======================================== */
+
+.dashboard-card {
+  position: relative;
+
+  background: #ffffff;
+
+  padding: 30px;
+
+  border-radius: 18px;
+
+  margin-bottom: 40px;
+
+  border: 1px solid #eeeeee;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+
+  overflow: hidden;
+}
+
+/* Red accent */
+
+.dashboard-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 5px;
+  height: 100%;
+
+  background: #c7191f;
+}
+
+/* ========================================
+   CARD HEADING
+======================================== */
+
+.card-heading {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 30px;
+}
+
+.card-heading h2 {
+  margin: 0 0 5px;
+
+  font-size: 21px;
+
+  color: #242424;
+}
+
+.card-heading p {
+  margin: 0;
+
+  color: #888;
+
+  font-size: 14px;
+}
+
+/* ========================================
+   CARD ICON
+======================================== */
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  background: #fff0f1;
+
+  color: #c7191f;
+
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.hospital-icon {
+  background: #fff0f1;
+}
+
+/* ========================================
+   INFORMATION GRID
+======================================== */
+
+.info-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 15px;
+}
+
+.info-item {
+  padding: 20px;
+
+  background: #fafafa;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+
+  transition: all 0.25s ease;
+}
+
+.info-item:hover {
+  background: #ffffff;
+
+  border-color: #ead1d2;
+
+  transform: translateY(-2px);
+}
+
+.info-item span {
+  color: #888;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+}
+
+.info-item strong {
+  color: #272727;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+.info-item small {
+  color: #999;
+
+  font-size: 12px;
+}
+
+/* ========================================
+   BLOOD GROUP
+======================================== */
+
+.blood-group {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+
+  padding: 6px 13px;
+
+  background: #c7191f;
+
+  color: #ffffff !important;
+
+  border-radius: 7px;
+
+  font-size: 16px !important;
+}
+
+/* ========================================
+   STATUS
+======================================== */
+
+.status {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  font-size: 15px !important;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: currentColor;
+}
+
+.available {
+  color: #16834b !important;
+}
+
+.unavailable {
+  color: #c7191f !important;
+}
+
+/* ========================================
+   SECTION TITLE
+======================================== */
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+.section-title h2 {
+  margin: 0 0 5px;
+
+  font-size: 23px;
+}
+
+.section-title p {
+  margin: 0;
+
+  color: #888;
+
+  font-size: 14px;
+}
+
+/* ========================================
+   ACTION CARDS
+======================================== */
+
+.dashboard-actions {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+.hospital-actions {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.dashboard-action {
+  position: relative;
+
+  display: flex;
+
+  gap: 18px;
+
+  padding: 25px;
+
+  min-height: 175px;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 16px;
+
+  text-decoration: none;
+
+  color: #222;
+
+  overflow: hidden;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.dashboard-action::after {
+  content: "→";
+
+  position: absolute;
+
+  right: 22px;
+  top: 20px;
+
+  color: #d5d5d5;
+
+  font-size: 20px;
+
+  transition: all 0.25s ease;
+}
+
+.dashboard-action:hover {
+  transform: translateY(-6px);
+
+  border-color: #e7c6c7;
+
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-action:hover::after {
+  color: #c7191f;
+
+  transform: translateX(4px);
+}
+
+/* ========================================
+   ACTION ICONS
+======================================== */
+
+.action-icon {
+  flex-shrink: 0;
+
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  background: #fff0f1;
+
+  color: #c7191f;
+
+  font-size: 22px;
+
+  transition: all 0.25s ease;
+}
+
+.dashboard-action:hover .action-icon {
+  background: #c7191f;
+
+  color: #ffffff;
+
+  transform: scale(1.05);
+}
+
+.notification-icon {
+  background: #fff4e8;
+
+  color: #d67b00;
+}
+
+.dashboard-action:hover .notification-icon {
+  background: #d67b00;
+}
+
+.request-icon {
+  background: #eef5ff;
+
+  color: #3676c9;
+}
+
+.dashboard-action:hover .request-icon {
+  background: #3676c9;
+}
+
+/* ========================================
+   ACTION CONTENT
+======================================== */
+
+.action-content {
+  padding-right: 20px;
+}
+
+.action-content h3 {
+  margin: 2px 0 9px;
+
+  font-size: 18px;
+
+  color: #242424;
+}
+
+.action-content p {
+  margin: 0 0 15px;
+
+  color: #777;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+.action-link {
+  color: #c7191f;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+/* ========================================
+   LOGIN REQUIRED
+======================================== */
+
+.dashboard-login-required {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+
+  background: #f7f8fa;
+}
+
+.login-required-card {
+  width: 100%;
+  max-width: 420px;
+
+  padding: 45px 35px;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+.login-icon {
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 20px;
+
+  background: #fff0f1;
+
+  border-radius: 50%;
+
+  font-size: 25px;
+}
+
+.login-required-card h2 {
+  margin-bottom: 10px;
+}
+
+.login-required-card p {
+  color: #777;
+
+  line-height: 1.6;
+
+  margin-bottom: 25px;
+}
+
+.dashboard-login-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 25px;
+
+  background: #c7191f;
+
+  color: #ffffff;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-weight: 700;
+}
+
+.dashboard-login-button:hover {
+  background: #a91419;
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+  .dashboard-container {
+    padding: 35px 25px;
+  }
+
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hospital-actions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+  .dashboard-container {
+    padding: 25px 16px;
+  }
+
+  .dashboard-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    margin-bottom: 30px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 30px;
+  }
+
+  .dashboard-header p {
+    font-size: 14px;
+  }
+
+  .logout-button {
+    width: 100% !important;
+  }
+
+  .dashboard-card {
+    padding: 22px;
+
+    border-radius: 15px;
+
+    margin-bottom: 30px;
+  }
+
+  .card-heading {
+    margin-bottom: 20px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-actions,
+  .hospital-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-action {
+    min-height: auto;
+
+    padding: 22px;
+  }
+}
+
+/* ========================================
+   SMALL PHONES
+======================================== */
+
+@media (max-width: 400px) {
+  .dashboard-header h1 {
+    font-size: 26px;
+  }
+
+  .dashboard-card {
+    padding: 18px;
+  }
+
+  .dashboard-action {
+    padding: 18px;
+  }
+
+  .action-icon {
+    width: 45px;
+    height: 45px;
+  }
+}
